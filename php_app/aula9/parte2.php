@@ -25,9 +25,12 @@
         echo "a nota primária: $nota1";
         echo "<br/> nota secundária: $nota2";
 
-        if ($média >= 6 ){
+        if ($média >= 5 && $média <= 6){
             echo "<br/> média entre nota primária e secundária: $média";
-            echo "<br/> aluno <span class='texto'>APROVADO!</span>";
+            echo "<br/> aluno <span class='texto'>RECUPERAÇÃO!</span>";
+        } elseif ($média >= 7 ){
+            echo "<br/> média entre nota primária e secundária: $média";
+            echo "<br/> aluno <span class='texto'>APROVADO!</span>";  
         } else {
             echo "<br/> média entre nota primária e secundária: $média";
             echo "<br/> aluno <span class='texto'>REPROVADO!</span>";
