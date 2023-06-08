@@ -18,7 +18,7 @@
             $tot = func_num_args();
             $s = 0;
             for ($i = 0; $i <= $tot; $i++){
-                $s = $s + $p[$i];
+                $s +=  $p[$i];
             }
             return $s;
         }
