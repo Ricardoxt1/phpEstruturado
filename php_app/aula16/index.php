@@ -50,5 +50,62 @@
         echo "<br/>\n";
         echo("texto aplicando trim e contando novamente com strlen: ". strlen($novo));
     ?>
+    <h2>função 6 - ltrim</h2>
+    <?php
+        $texto = "   lorem Ips et dolor sit amet, consectetur  ";
+        echo("texto sem trim: ". strlen("$texto"));
+        echo "<br/>\n";
+        $novo = ltrim($texto);
+        echo($novo);
+        echo "<br/>\n";
+        echo("texto aplicando trim e contando novamente com strlen: ". strlen($novo));
+    ?>
+    <h2>função 7 - rtrim</h2>
+    <?php
+        $texto = "   lorem Ips et dolor sit amet, consectetur  ";
+        echo("texto sem trim: ". strlen("$texto"));
+        echo "<br/>\n";
+        $novo = rtrim($texto);
+        echo($novo);
+        echo "<br/>\n";
+        echo("texto aplicando trim e contando novamente com strlen: ". strlen($novo));
+    ?>
+    <h2>função 8 - str_word_count</h2>
+    <?php
+        $frase = "lorem ipsum d Prometheus non";
+        $cont =  str_word_count($frase, 2); // ($frase, 0) contagem; ($frase, 1) faz contagem pra cada posição do vetor ; 
+        var_dump($cont);
+    ?>
+    <h2>função 9 - explode</h2>
+    <?php
+        $site = "Curso em video";
+        $vetor = explode (" ", $site);
+        print_r($vetor);
+    ?>
+    <h2>função 10 - str_split</h2>
+    <?php
+        $nome = "Ricardo";
+        $vetor = str_split($nome);
+        print_r($vetor);
+    ?>
+    <h2>função 11 - implode</h2>
+    <?php
+        $nome = array("Curso", "em", "video");
+        $texto = implode("#", $nome);
+        echo $texto;
+
+    ?>
+    <h2>função 12 - chr</h2>
+    <?php
+        $letra = chr(98);
+        echo "a letra no código acima é: " . $letra;
+    ?>
+    <h2>função 13 - ord</h2>
+    <?php
+        $letra = "C";
+        echo "$letra </br>";
+        $cod = ord($letra);
+        echo "a letra acima é o código: " . $cod;
+    ?>
 </body>
 </html>
