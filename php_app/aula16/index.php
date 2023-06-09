@@ -137,11 +137,50 @@
         $novo = strrev($name);
         echo $novo;
     ?>   
-    <h2>função 19 - strripos </h2>
+    <h2>função 19 - strpos </h2>
     <?php
         $frase = "estou aprendendo PHP";
         $busca = strpos($frase, "PHP");
         echo "a palavra foi encontrada na posição: ". $busca;
-    ?>       
+    ?>      
+    <h2>função 20 - stripos </h2>
+    <?php
+        $frase = "estou aprendendo PHP";
+        $busca = stripos($frase, "php");
+        echo "a palavra foi encontrada na posição: ". $busca;
+    ?>    
+    <h2>função 21 - substr_count </h2>
+    <?php
+        $frase = "estou aprendendo PHP, e finalizando o curso propriamente dita que é PHP";
+        $busca = substr_count($frase, "PHP");
+        echo "a palavra foi encontrada $busca vezes";
+    ?>   
+    <h2>função 22 - substr </h2>
+    <?php
+        $frase = "estou aprendendo PHP, e finalizando o curso propriamente dita que é PHP";
+        $busca = substr($frase, 0 , 5); //primeiro parametro chama a variavel que será analisada, segundo define o ponto de inicio para busca e terceiro limita até onde irá
+        echo $busca ;
+    ?>  
+    <h2>função 23 - str_pad </h2>
+    <?php
+        $frase = "estou aprendendo PHP, e finalizando o curso propriamente dita que é PHP";
+        $def = 100;
+        $busca = str_pad($frase, $def, "x", STR_PAD_RIGHT); //primeiro parametro chama a variavel que será analisada, segundo define o ponto de inicio para busca e terceiro limita até onde irá
+        echo $busca ;
+    ?> 
+    <h2>função 24 - str_repeat </h2>
+    <?php
+        $repetição = str_repeat("ei ", 7);
+        echo $repetição;
+    ?>
+    <h2>função 25 - str_replace </h2>
+    <?php
+        $frase = "estou aprendendo matemática, e tenho gostado muito";
+        $mudança = str_replace("matemática", "PHP", $frase);
+        echo $mudança;
+        echo "</br> ou";
+        $mudança = str_ireplace("Matemática", "PHP", $frase); //por essa forma é mais aconselhavel, por ignorar qualquer definição 
+        echo "<br/>". $mudança;
+    ?>      
 </body>
 </html>
