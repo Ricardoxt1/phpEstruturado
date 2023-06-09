@@ -107,5 +107,41 @@
         $cod = ord($letra);
         echo "a letra acima é o código: " . $cod;
     ?>
+    <h2>função 14 - strtolower </h2>
+    <?php
+        $name = "Ricardo Alexandre";
+        $novo = strtolower($name);
+        echo $novo;
+    ?>
+    <h2>função 15 - strtoupper </h2>
+    <?php
+        $name = "Ricardo Alexandre";
+        $novo = strtoupper($name);
+        echo $novo;
+    ?>
+    <h2>função 16 - ucfirst </h2>
+    <?php
+        $name = "ricardo alexandre";
+        $novo = ucfirst($name);
+        echo $novo;
+    ?>  
+    <h2>função 17 - ucwords </h2>
+    <?php
+        $name = "ricardo alexandre";
+        $novo = ucwords($name);
+        echo $novo;
+    ?>
+    <h2>função 18 - strrev </h2>
+    <?php
+        $name = "ricardo alexandre";
+        $novo = strrev($name);
+        echo $novo;
+    ?>   
+    <h2>função 19 - strripos </h2>
+    <?php
+        $frase = "estou aprendendo PHP";
+        $busca = strpos($frase, "PHP");
+        echo "a palavra foi encontrada na posição: ". $busca;
+    ?>       
 </body>
 </html>
