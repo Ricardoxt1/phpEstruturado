@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="processo.php" method="post">
+    <form action="./processo.php" method="post">
         <h2>cadastro de usuário</h2>
         <label for="l.n">nome</label>
         <input type="text" name="nome" id="l.n" /> <br />
