@@ -23,7 +23,7 @@
     $resultado_costumers = mysqli_query($conn, $result_costumers);
 
     ?>
-    <a href="index.php">voltar</a>
+    <a href="./cadastrar.php">voltar</a>
 </body>
 
 </html>
