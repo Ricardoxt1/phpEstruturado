@@ -1,12 +1,7 @@
 <?php
-
-$servidor = "localhost";
+$servidor = "mysql";
 $usuario = "root";
-$senha = "";
+$senha = "root";
 $dbname = "library";
-
-
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
-
-
 ?>
