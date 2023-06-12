@@ -22,6 +22,11 @@
     $result_costumers = "insert into costumers (name, email, created) values ('$name', '$email', NOW())";
     $resultado_costumers = mysqli_query($conn, $result_costumers);
 
+    if (mysqli_insert_id($conn)) {
+        header("Location: cadastrar.php");
+    } else {
+        header("Location: cadastrar.php");
+    }
     ?>
     <a href="./cadastrar.php">voltar</a>
 </body>
