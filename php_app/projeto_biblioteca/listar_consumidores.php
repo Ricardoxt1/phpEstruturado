@@ -10,8 +10,8 @@ include_once("./conexão.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Biblioteca</title>
-    <a href="./cadastrar.php">cadastrar</a>
-    <a href="./listar.php">listar</a>
+    <a href="./cadastrar_consumidores.php">cadastrar</a>
+    <a href="./listar_consumidores.php">listar</a>
 </head>
 
 <body>
@@ -52,22 +52,22 @@ include_once("./conexão.php");
         $max_pg = 3;
 
         //primeira pg
-        echo "<a href='/projeto_biblioteca/listar.php?pagina=1'> Primeira </a>";
+        echo "<a href='/projeto_biblioteca/listar_consumidores.php?pagina=1'> Primeira </a>";
 
         for ($pag_ant = $pagina - 1; $pag_ant <= $pagina; $pag_ant++) {
             if ($pag_ant >= 1) {
-                echo "<a href='/projeto_biblioteca/listar.php?pagina=$pag_ant'> $pag_ant </a>";
+                echo "<a href='/projeto_biblioteca/listar_consumidores.php?pagina=$pag_ant'> $pag_ant </a>";
             }
         }
 
         for ($pag_seguinte = $pagina + 1; $pag_seguinte <= $pagina + $max_pg; $pag_seguinte++) {
             if ($pag_seguinte <= $quantidade_pg) {
-                echo "<a href='/projeto_biblioteca/listar.php?pagina=$pag_seguinte'> $pag_seguinte </a>";
+                echo "<a href='/projeto_biblioteca/listar_consumidores.php?pagina=$pag_seguinte'> $pag_seguinte </a>";
             }
         }
-        
+
         //ultima pg
-        echo "<a href='/projeto_biblioteca/listar.php?pagina=$quantidade_pg'> Ultima </a>";
+        echo "<a href='/projeto_biblioteca/listar_consumidores.php?pagina=$quantidade_pg'> Ultima </a>";
         ?>
     </div>
 

@@ -10,9 +10,8 @@ $resultado_costumers = mysqli_query($conn, $result_costumers);
 
 if (mysqli_insert_id($conn)) {
     $_SESSION['msg'] = "<p style='color:green;'>Usuário cadastrado com sucesso!</p>";
-    header("Location:cadastrar.php");
+    header("Location:cadastrar_consumidores.php");
 } else {
     $_SESSION['msg'] = "<p style='color:green;'>Cadastro não foi realizado com sucesso.</p>";
-    header("Location:cadastrar.php");
+    header("Location:cadastrar_consumidores.php");
 }
-?>
