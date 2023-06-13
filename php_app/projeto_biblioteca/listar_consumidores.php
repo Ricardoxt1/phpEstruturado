@@ -37,7 +37,6 @@ include_once("./conexão.php");
         $result_costumers = "SELECT * FROM costumers LIMIT $inicio, $qnt_result_pg";
         $total_costumers = mysqli_query($conn, $result_costumers);
         while ($costumers = mysqli_fetch_assoc($total_costumers)) {
-            echo "Id: " . $costumers['id'] . "<br>";
             echo "name: " . $costumers['name'] . "<br>";
             echo "email: " . $costumers['email'] . "<br><hr>";
         }
