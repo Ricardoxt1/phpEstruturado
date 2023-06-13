@@ -2,16 +2,17 @@
 session_start();
 include_once("conexão.php");
 
-$user_name = $_POST["nome"] ? $_POST["nome"] : false;
-$email = $_POST["email"] ? $_POST["email"] : false;
+$titulo = $_POST["titulo"] ? $_POST["titulo"] : false;
+$pagina = $_POST["paginas"] ? $_POST["paginas"] : false;
+$ano_fabricação = $_POST["ano"] ? $_POST["ano"] : false;
 
-$result_costumers = "insert into costumers (name, email, created) values ('$user_name', '$email', NOW())";
-$resultado_costumers = mysqli_query($conn, $result_costumers);
+$result_livros = "insert into books (titule, page, realese_date) values ('$titulo', '$pagina', '$ano_fabricação')";
+$resultado_livros = mysqli_query($conn, $result_livros);
 
 if (mysqli_insert_id($conn)) {
     $_SESSION['msg'] = "<p style='color:green;'>Usuário cadastrado com sucesso!</p>";
-    header("Location:cadastrar_consumidores.php");
+    header("Location:cadastrar_livros.php");
 } else {
-    $_SESSION['msg'] = "<p style='color:green;'>Cadastro não foi realizado com sucesso.</p>";
-    header("Location:cadastrar_consumidores.php");
+    $_SESSION['msg'] = "<p style='color:red;'>Cadastro não foi realizado com sucesso.</p>";
+    header("Location:cadastrar_livros.php");
 }
