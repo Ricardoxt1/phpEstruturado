@@ -15,7 +15,7 @@ session_start();
 </head>
 
 <body>
-    <h2>cadastro de usuário</h2>
+    <h2>cadastro de livros</h2>
     <div>
         <?php
         if (isset($_SESSION['msg'])) {
@@ -27,12 +27,12 @@ session_start();
     </div>
     <form action="processo_livros.php" method="post">
 
-        <label for="l.titule">titulo</label>
-        <input type="text" name="titule" id="l.titule" /> <br />
+        <label for="l.titulo">titulo</label>
+        <input type="text" name="titulo" id="l.titulo" /> <br />
         <label for="pg">paginas</label>
         <input type="number" name="paginas" id="pg" min=1 /> <br />
         <label for="fabric">fabricação</label>
-        <input type="number" name="ano-fab" id="fabric" min=1>
+        <input type="number" name="ano" id="fabric" min=1>
         <input type="submit" name="envio" id="submit" />
     </form>
 </body>
