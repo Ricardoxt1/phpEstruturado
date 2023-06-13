@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("conexão.php");
+include_once("../../projeto_biblioteca/conexão.php");
 
 $titulo = $_POST["titulo"] ? $_POST["titulo"] : false;
 $pagina = $_POST["paginas"] ? $_POST["paginas"] : false;
