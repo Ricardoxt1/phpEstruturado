@@ -19,6 +19,7 @@ session_start();
 <body>
     <h2>cadastrar livros</h2>
     <div>
+        <!-- mensagem catch e err -->
         <?php
         if (isset($_SESSION['msg'])) {
             echo $_SESSION['msg'];
