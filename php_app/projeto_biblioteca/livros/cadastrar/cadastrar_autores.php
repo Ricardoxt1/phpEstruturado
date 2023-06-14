@@ -17,6 +17,7 @@ session_start();
 <body>
     <h2>cadastro de autores</h2>
     <div>
+        <!-- mensagem catch e err -->
         <?php
         if (isset($_SESSION['msg'])) {
             echo $_SESSION['msg'];
