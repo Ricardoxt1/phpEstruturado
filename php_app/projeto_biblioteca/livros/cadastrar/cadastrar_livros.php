@@ -24,11 +24,11 @@ session_start();
             echo $_SESSION['msg'];
             unset($_SESSION['msg']);
         }
-        
+
         ?>
-        
+
     </div>
-    <form action="../processo.php" method="post">
+    <form action="./processo_livros.php" method="post">
 
         <!-- titulo do livro -->
         <label for="l.titulo">titulo</label> <br>

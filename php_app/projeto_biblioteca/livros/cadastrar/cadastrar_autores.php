@@ -25,7 +25,7 @@ session_start();
         ?>
 
     </div>
-    <form action="../processo.php" method="post">
+    <form action="./processo_autores.php" method="post">
         <!-- nome do autor -->
         <label for="l.autor">autor</label> <br>
         <input type="text" name="nome_autor" id="l.autor" placeholder="nome do autor" /> <br>
