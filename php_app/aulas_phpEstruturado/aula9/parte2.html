@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>média por condição</title>
+    <style>
+        .estilonota {
+            margin: 10px;
+        }
+
+        .estilonota label {
+            padding-bottom: 0px;
+        }
+
+        .estilonota .btnCalc {
+            background-color: #39363600;
+            width: 7%;
+        }
+
+        .estilonota .nota .btnCalcul {
+            border-radius: 8px;
+            margin-bottom: 4px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form action="index.php" method="get">
+        <div class="estilonota">
+            <label for="n1">nota: 1</label>
+            <input class="nota" type="number" step="any" name="nota1" id="n1"> <br />
+            <label for="n2">nota: 2</label>
+            <input class="nota" type="number" step="any" name="nota2" id="n2"> <br />
+            <input class="btnCalc" type="submit" value="calcular média">
+        </div>
+    </form>
+</body>
+
+</html>
