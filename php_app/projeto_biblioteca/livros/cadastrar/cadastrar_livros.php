@@ -19,14 +19,14 @@ session_start();
 <body>
     <h2>cadastrar livros</h2>
     <div>
-        <!-- mensagem catch e err -->
         <?php
         if (isset($_SESSION['msg'])) {
             echo $_SESSION['msg'];
             unset($_SESSION['msg']);
         }
-
+        
         ?>
+        
     </div>
     <form action="../processo.php" method="post">
 
