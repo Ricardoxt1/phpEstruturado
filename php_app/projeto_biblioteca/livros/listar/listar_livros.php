@@ -17,18 +17,18 @@ include_once("../../conexão.php");
 
 <body>
     <h2>listagem de livros</h2>
+
     <div>
-        <!-- mensagem catch e err -->
         <?php
         if (isset($_SESSION['msg'])) {
             echo $_SESSION['msg'];
             unset($_SESSION['msg']);
         }
-
+        
         //inserir paginação
         $pagina_atual =  filter_input(INPUT_GET, 'pagina', FILTER_SANITIZE_NUMBER_INT);
         $pagina = (!empty($pagina_atual) ? $pagina_atual : 1);
-
+        
         //setar quantidade de itens de pagina 
         $qnt_result_pg = 1;
 
