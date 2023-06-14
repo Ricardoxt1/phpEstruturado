@@ -20,6 +20,7 @@ $resultado_livros = mysqli_query($conn, $result_livros);
 $result_autores = "insert into authors (id, name) values ('$id_autor','$nome_autor')";
 $resultado_autores = mysqli_query($conn, $result_autores);
 
+//mensagem catch e err
 if (mysqli_insert_id($conn)) {
     $_SESSION['msg'] = "<p style='color:green;'>Usuário cadastrado com sucesso!</p>";
     header("Location:cadastrar_livros.php");
