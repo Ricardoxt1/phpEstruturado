@@ -18,6 +18,7 @@ include_once("../../conexão.php");
 <body>
     <h2>listagem de livros</h2>
     <div>
+        <!-- mensagem catch e err -->
         <?php
         if (isset($_SESSION['msg'])) {
             echo $_SESSION['msg'];
