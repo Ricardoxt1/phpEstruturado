@@ -9,10 +9,10 @@ $tabela = 'books';
 
 $id = 1;
 $stmt = $pdo->prepare('SELECT * FROM ' . $tabela . ' WHERE id = :id');
-$stmt->execute(array('id' => $id));
+$stmt->bindValue(':id', $id);
+$stmt->execute();
 
 $resultado = $stmt->fetchAll();
 
-foreach ($resultado as $key) {
-    var_dump($key);
-}
+
+echo ("o livro se chama: " . $key['titule'] . ", possui " . $key['page'] . "e seu ano de fabrição é " . $key['realese_date']);
