@@ -2,3 +2,4 @@ config/
 nginx/
 mysql/
 conexão.php
+config.php
