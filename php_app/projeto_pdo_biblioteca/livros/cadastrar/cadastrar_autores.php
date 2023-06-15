@@ -5,6 +5,8 @@ $pdo = conectar();
 
 $tabela = 'authors';
 
-//inserindo autores no banco de dados
-
-$smt = $pdo->prepare('INSERT INTO '.$tabela.' (name) VALEUS' ('j.r.r. tolkein'));
+// Inserting authors into the database
+$smt = $pdo->prepare('INSERT INTO ' . $tabela . ' (name) VALUES (:name)');
+$smt->bindParam(':name', $name);
+$name = 'j.r.r. tolkein';
+$smt->execute();
